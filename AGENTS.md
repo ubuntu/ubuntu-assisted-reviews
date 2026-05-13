@@ -27,5 +27,5 @@ For example, `./sru-review` contains instructions for reviewing SRUs.
 The following tools should be available when using these skills. The user should be alerted if any of these tools are unavailable.
 
 - `git-ubuntu`: Used to get packages from Launchpad. Can be installed through the `git-ubuntu` snap.
-- `lrc`: Used for copyright review. Traverses the source package tree, figures out the license/copyright of all files, and compares them to `debian/copyright`, flagging any discrepancies. Can be installed by the `licenserecon` package.
+- `lrc`: Used for copyright review. Can be installed by the `licenserecon` package.
 - `rmadison`: Used to check for the versions of a particular package in the Debian/Ubuntu archive. Can be installed by the `devscripts` package.
