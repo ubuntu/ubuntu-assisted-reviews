@@ -1,0 +1,22 @@
+# Review checklist for packages in unapproved
+
+- bugs mentioned in changelog and sources.changes file
+- make sure all mentioned bugs are public
+- the upload is a minimal change
+- changes file includes previous versions if needed
+- fix present in later supported releases
+- fix present in devel release
+- correct package versioning
+- no dependency on another SRU that needs to land at the same time
+- New upstream version? Does uscan work?
+- if the bug invokes a package-specific procedure, see https://documentation.ubuntu.com/sru/en/latest/reference/package-specific/ for instructions
+- ensure no unrelated changes in the diff
+- are there NEW packages in debian/control? If yes, this needs a AA/SRU combined review, see https://canonical-ubuntu-project.readthedocs-hosted.com/maintainers/AA/aa-new-review/#new-packages-targeted-at-stable-releases and https://documentation.ubuntu.com/sru/en/latest/explanation/non-standard-processes/#new-queue-in-the-sru-context
+- bug has correct ubuntu releases tasks
+- SRU template on each referenced bug is properly filled in
+- if the bug involves the kernel, make sure that both the GA and HWE kernels are included in the test plan
+- the test plan should cover normal usage of the package
+- the test plan show a good user story, and not just test the specific change introduced
+- update-maintainer was run, if needed
+- no changes affecting translations
+- if phasing was halted due to errors, the changes should address that: https://ubuntu-archive-team.ubuntu.com/phased-updates.html
