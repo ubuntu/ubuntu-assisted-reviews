@@ -71,9 +71,13 @@ rmadison -a source <package>
 - Visit <https://ubuntu-archive-team.ubuntu.com/phased-updates.html>.
 - If phasing was halted due to errors, confirm the changes in this upload address the failure.
 
+### 8. Sanitize the report
+
+Before saving or emitting the final report, remove all personally-identifying information (PII). Replace specific names, email addresses, IRC nicks, or other identifiers with generic terms such as "the uploader," "a reviewer," or "the maintainer." Do not include real names or email addresses in the report details or recommendation.
+
 ## Report template
 
-After completing the steps above, output a report in the following format:
+After completing the steps above, write the report to a file named `sru-review-<package>-lp<bug>.md` (use the primary bug number from the changelog) and emit it in **Markdown** using the following format:
 
 ```
 === SRU Review Report ===
