@@ -1,0 +1,2 @@
+mkdir -p .claude/skills
+cp -r sru-review/ .claude/skills/
