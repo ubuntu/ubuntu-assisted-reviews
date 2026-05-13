@@ -1,0 +1,9 @@
+name: sru-review-agent
+base: ubuntu@24.04
+sdks:
+  - name: claude-code
+  - name: project-sru-agent-setup
+
+actions:
+  claude-sru-review: |
+    claude --model $CLAUDE_MODEL --dangerously-skip-permissions "Run the sru-review skill on the package $1 in the $2 release."

@@ -1,0 +1,3 @@
+apt update
+apt install devscripts -y
+snap install --classic git-ubuntu
