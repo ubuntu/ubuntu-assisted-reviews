@@ -13,8 +13,8 @@ For example, `./sru-review` contains instructions for reviewing SRUs.
 
 ## Available Skills
 
-- `skills/sru-review` - Review Ubuntu Stable Release Updates
-- `skills/new-review` - Review packages in the NEW queue
+- `./sru-review` - Review Ubuntu Stable Release Updates
+- `./new-review` - Review packages in the NEW queue
 
 # Safeguards
 
